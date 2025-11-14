@@ -45,10 +45,15 @@ This project demonstrates real-world serverless architecture, automation, and AI
 
 ## 📂 Project Structure
 📦 project-root
-├── 📄 app.py # Streamlit frontend application
-├── 📄 lambda_function.py # AWS Lambda code for Textract processing
-├── 📄 requirements.txt # Python dependencies
-└── 📄 README.md # Project documentation
+
+├── 📄 app.py                # Streamlit frontend application
+
+├── 📄 lambda_function.py    # AWS Lambda code for Textract processing
+
+├── 📄 requirements.txt      # Python dependencies
+
+└── 📄 README.md             # Project documentation
+
 
 
 ---
