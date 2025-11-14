@@ -1,0 +1,47 @@
+{
+	"Version": "2012-10-17",
+	"Statement": [
+		{
+			"Effect": "Allow",
+			"Action": [
+				"logs:CreateLogGroup",
+				"logs:CreateLogStream",
+				"logs:PutLogEvents"
+			],
+			"Resource": "arn:aws:logs:*:*:*"
+		},
+		{
+			"Effect": "Allow",
+			"Action": [
+				"s3:GetObject",
+				"s3:ListBucket",
+				"s3:PutObject"
+			],
+			"Resource": [
+				"arn:aws:s3:::xxxxxx-xxxxx-us-east-1",
+				"arn:aws:s3:::xxxxxx-xxxxx-us-east-1/*"
+			]
+		},
+		{
+			"Effect": "Allow",
+			"Action": [
+				"textract:DetectDocumentText",
+				"textract:StartDocumentTextDetection",
+				"textract:GetDocumentTextDetection",
+				"textract:AnalyzeDocument",
+				"textract:StartDocumentAnalysis",
+				"textract:GetDocumentAnalysis"
+			],
+			"Resource": "*"
+		},
+		{
+			"Effect": "Allow",
+			"Action": [
+				"dynamodb:PutItem",
+				"dynamodb:UpdateItem",
+				"dynamodb:GetItem"
+			],
+			"Resource": "arn:aws:dynamodb:us-east-1:376129861418:table/DocumentRecords"
+		}
+	]
+}
